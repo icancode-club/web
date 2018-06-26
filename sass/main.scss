@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+body {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    border-bottom: solid 2px #d3d3d3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    .logo {
+        margin-right: auto;
+    }
+    .link {
+        margin-left: 24px;
+        text-decoration: none;
+    }
+}
+
+.nav-spacer {
+    height: 60px;
+}
+
+.header-hero {
+    height: calc(100vh - 60px);
+    width: 100%;
+    background: url('/hero-bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+            max-width: 650px;
+            width: 100%;
+        }
+        p {
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+    }
+}
+
+section {
+    &.dark {
+        color: white;
+    }
+    box-sizing: border-box;
+    padding: 16px;
+    > h1 {
+        text-align: center;
+    }
+}

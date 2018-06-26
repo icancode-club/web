@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/" class="logo">
+            <img height="37" src="/logo-small.png" />
+        </a>
+        <a class="link" href="/courses">
+            Enroll
+        </a>
+        <a class="link" href="/contact">
+            Contact Us
+        </a>
+    </nav>
+    <div class="nav-spacer"></div>
+
+    {% block content %}
+    <div class="header-hero">
+        <div class="header-center">
+            <img src="logo.png" />
+            <p>After School Coding Club</p>
+            <p>Grades 3 - 10</p>
+            <div class="header-links">
+
+            </div>
+        </div>
+    </div>
+
+    <section class="programs dark" style="background-color: #53C6D9;">
+        <h1>Programs</h1>
+    </section>
+
+    <section class=" promos ">
+        <h1>Promos</h1>
+    </section>
+
+    <section class="intro ">
+        <h1>Learn to Code</h1>
+
+        <div class="grid ">
+
+        </div>
+    </section>
+    {% endblock content %}
+
+</body>
+
+</html>
