@@ -81,6 +81,9 @@
 
         <div>
             <h2>More</h2>
+            <p>Proud Partners with: </p>
+            {% for partner in config.extra.partners %}
+            <img src="{{partner.icon}}" /> {% endfor %}
         </div>
     </footer>
 

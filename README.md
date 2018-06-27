@@ -18,7 +18,13 @@ gutenberg serve
 You should see it spawn a server at [localhost:1111](http://localhost:1111).  Here, you can view the site.  It will also auto-update when changes are made.
 
 # 2. How do I change content?
-It depends on what you want to change.  Because the majority of the site is static, you'll want to look in the `templates` folder for a corresponding `html` file.  If the content is dynamic (e.g., a new promo) you will find that in the `content` directory as a `markdown` file.
+It depends on what you want to change.  You will find most things in the `content` directory as a `markdown` file.  
+
+If you are looking to change something like a phone number or address, look in the root directory for a file called `config.toml`.
+
+If you need to change some structure of the site, check out the `templates` directory.
+
+> Tip: search for text you want to change in order to easily find its source file.
 
 # 3. Where do I add media?
 Use the `static` folder for images, audio files, and other media.  

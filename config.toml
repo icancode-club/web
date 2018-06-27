@@ -17,17 +17,24 @@ title = "iCanCode Club"
 email = "info@icancodeclub.com"
 phone = "(585) 434-5533"
 
+# social media icons for the footer
 [[extra.social]]
     name = "Twitter"
     icon = "/icons/twitter.png"
     url = "https://twitter.com/iCanCodeClub"
-
 [[extra.social]]
     name = "Facebook"
     icon = "/icons/facebook.png"
     url = "https://www.facebook.com/pages/ICanCode/942981635784038"
-
 [[extra.social]]
     name = "LinkedIn"
     icon = "/icons/linkedin.png"
     url = "https://www.linkedin.com/pub/icancode-kids-club/101/9b7/6b1"
+
+# partnership icons for the footer
+[[extra.partners]]
+    name = "Town of Perinton"
+    icon = "/icons/perinton.jpg"
+[[extra.partners]]
+    name = "Brighton Community Education"
+    icon = "/icons/brighton.jpg"
