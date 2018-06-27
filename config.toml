@@ -14,4 +14,20 @@ build_search_index = false
 title = "iCanCode Club"
 
 [extra]
-# Put all your custom variables here
+email = "info@icancodeclub.com"
+phone = "(585) 434-5533"
+
+[[extra.social]]
+    name = "Twitter"
+    icon = "/icons/twitter.png"
+    url = "https://twitter.com/iCanCodeClub"
+
+[[extra.social]]
+    name = "Facebook"
+    icon = "/icons/facebook.png"
+    url = "https://www.facebook.com/pages/ICanCode/942981635784038"
+
+[[extra.social]]
+    name = "LinkedIn"
+    icon = "/icons/linkedin.png"
+    url = "https://www.linkedin.com/pub/icancode-kids-club/101/9b7/6b1"

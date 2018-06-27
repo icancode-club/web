@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,20 +40,49 @@
 
     <section class="programs dark" style="background-color: #53C6D9;">
         <h1>Programs</h1>
+        {{ macros::course_list() }}
     </section>
 
     <section class=" promos ">
         <h1>Promos</h1>
+        {% set promos = get_page(path="promos.md") %} {{ promos.content | safe }}
+        <a class="button" href="/courses">Enroll Here!</a>
     </section>
 
     <section class="intro ">
         <h1>Learn to Code</h1>
 
         <div class="grid ">
-
+            <div>
+                {% set about = get_page(path="about.md") %} {{ about.content | safe }}
+            </div>
         </div>
     </section>
     {% endblock content %}
+
+    <footer>
+        <div>
+            <h2>Contact Us</h2>
+            <p>
+                <a href="mailto:{{config.extra.email}}">{{config.extra.email}}</a>
+            </p>
+            <p>Phone: {{config.extra.phone}} </p>
+        </div>
+
+        <div>
+            <h2>Social Media</h2>
+
+            {% for social in config.extra.social %}
+            <a href="{{social.url}}">
+                <img src="{{social.icon}}" />
+            </a>
+            {% endfor %}
+        </div>
+
+        <div>
+            <h2>More</h2>
+        </div>
+    </footer>
 
 </body>
 
