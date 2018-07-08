@@ -30,31 +30,34 @@
     <div class="header-hero">
         <div class="header-center">
             <img src="logo.png" />
-            <p>After School Coding Club</p>
-            <p>Grades 3 - 10</p>
+            <p style='text-align: center'>After School Coding Club
+                <br>Grades 3 - 10</p>
             <div class="header-links">
-
+                <a class="button color-light" style='font-size: 24px;' href="mailto:info@icancodeclub.com?subject=Ask%20About%20a%20Free%20Trial">Free Trial</a>
             </div>
         </div>
     </div>
 
-    <section class="programs dark" style="background-color: #53C6D9;">
-        <h1>Programs</h1>
+    <section class="programs">
+        <h1 style="margin-bottom: 1em">Programs</h1>
         {{ macros::course_list() }}
     </section>
 
-    <section class=" promos ">
+    <section class="promos color-3 dark">
         <h1>Promos</h1>
         {% set promos = get_page(path="promos.md") %} {{ promos.content | safe }}
-        <a class="button" href="/courses">Enroll Here!</a>
+        <a class="button color-light" href="/courses">Enroll Here!</a>
     </section>
 
     <section class="intro ">
         <h1>Learn to Code</h1>
 
-        <div class="grid ">
+        <div class="grid" style="margin: 0 auto; max-width: 1500px;">
             <div>
                 {% set about = get_page(path="about.md") %} {{ about.content | safe }}
+            </div>
+            <div>
+
             </div>
         </div>
     </section>
@@ -73,7 +76,7 @@
             <h2>Social Media</h2>
 
             {% for social in config.extra.social %}
-            <a href="{{social.url}}">
+            <a class="social-icon" href="{{social.url}}">
                 <img src="{{social.icon}}" />
             </a>
             {% endfor %}
